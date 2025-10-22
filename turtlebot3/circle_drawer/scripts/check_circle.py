@@ -11,7 +11,7 @@ def velocity_callback(msg, token):
     # For simple circle motion, linear velocity should be constant, and angular velocity should also be constant
     if abs(linear_velocity - 0.8) < 0.05 and abs(angular_velocity + 0.4) < 0.05:  # Adjust based on your values
         rospy.loginfo("The robot is moving in a circle.")
-        res = requests.put('http://localhost/competencies/control-panel/activity-attempt/update/', json= {
+        res = requests.put('http://192.168.0.160/competencies/control-panel/activity-attempt/update/', json= {
             "token":{"PIN":token},
             "evaluaciones": [
                 {
