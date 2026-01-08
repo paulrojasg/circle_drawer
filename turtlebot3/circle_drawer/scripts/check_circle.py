@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import rospy
-from geometry_msgs.msg import Twisthttps://github.com/paulrojasg/circle_drawer/edit/main/turtlebot3/circle_drawer/scripts/check_circle.py
+from geometry_msgs.msg import Twist
 import requests
 
 def velocity_callback(msg, token):
