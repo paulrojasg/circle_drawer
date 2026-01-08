@@ -9,7 +9,6 @@ def draw_circles():
 
     clockwise_circle = Twist()
     clockwise_circle.linear.x = 0.8
-    clockwise_circle.angular.z = -0.4
 
     while not rospy.is_shutdown():
         pub.publish(clockwise_circle)
